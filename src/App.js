@@ -7,7 +7,8 @@ import 'tw-elements';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LayoutLanding from './component/LayoutLanding';
-import AboutUs from './pages/AboutUs'
+import AboutUs from './pages/AboutUs';
+import Catalog from './pages/Catalog';
 function App() {
   return (
   // <>
@@ -33,6 +34,16 @@ function App() {
               <>
                 <LayoutLanding>
                 <AboutUs/>
+                </LayoutLanding>
+              </>
+            }
+          />
+            <Route
+            path="/catalog"
+            element={
+              <>
+                <LayoutLanding>
+                <Catalog/>
                 </LayoutLanding>
               </>
             }
