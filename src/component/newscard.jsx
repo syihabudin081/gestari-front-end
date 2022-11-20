@@ -4,11 +4,11 @@ import React from 'react'
 function Newscard() {
   return (
   <>
-    <div class="w-full ">
+    <div class="w-11/12 mx-auto  ">
         <h1 class="text-center text-2xl font-semibold">
           Berita Lingkungan Hari Ini
         </h1>
-        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 w-11/12 mx-auto">
+        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 w-11/12 mx-auto ">
           <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img

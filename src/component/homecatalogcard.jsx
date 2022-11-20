@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "flowbite";
 function Homecatalogcard() {
@@ -19,24 +20,24 @@ function Homecatalogcard() {
 
       <div
         id="carouselExampleControls"
-        class="carousel slide relative"
+        class="carousel slide relative w-11/12 mx-auto"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner relative w-full overflow-hidden">
           <div class="carousel-item active relative float-left w-full">
             <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 w-11/12 mx-auto">
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
-                  Logam
+              <div class="max-w-sm bg-yellow-100 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                <h1 class="p-3 bg-yellow-300 w-1/4 text-center rounded-full m-3">
+                  Plastik
                 </h1>
                 <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
+                  src="https://cdn-icons-png.flaticon.com/512/2666/2666681.png"
                   class="w-32 self-center justify-center m-10"
                 />
               </div>
 
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
+              <div class="max-w-sm bg-red-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                <h1 class="p-3 bg-red-300 w-1/4 text-center rounded-full m-3">
                   Logam
                 </h1>
                 <img
@@ -44,12 +45,12 @@ function Homecatalogcard() {
                   class="w-32 self-center justify-center m-10"
                 />
               </div>
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
-                  Logam
+              <div class="max-w-sm bg-green-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                <h1 class="p-3 bg-green-300 w-1/4 text-center rounded-full m-3">
+                  Kertas
                 </h1>
                 <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
+                  src="https://cdn-icons-png.flaticon.com/512/81/81460.png"
                   class="w-32 self-center justify-center m-10"
                 />
               </div>
@@ -57,68 +58,20 @@ function Homecatalogcard() {
           </div>
           <div class="carousel-item  relative float-left w-full">
             <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 w-11/12 mx-auto">
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
-                  Logam
+              <div class="max-w-sm bg-purple-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                <h1 class="p-3 bg-purple-300 w-1/4 text-center rounded-full m-3">
+                  Khusus
                 </h1>
                 <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
+                  src="https://cdn-icons-png.flaticon.com/512/3134/3134212.png"
                   class="w-32 self-center justify-center m-10"
                 />
               </div>
 
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
-                  Logam
-                </h1>
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
-                  class="w-32 self-center justify-center m-10"
-                />
-              </div>
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
-                  Logam
-                </h1>
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
-                  class="w-32 self-center justify-center m-10"
-                />
-              </div>
+             
             </div>
           </div>
-          <div class="carousel-item  relative float-left w-full">
-            <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 w-11/12 mx-auto">
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
-                  Logam
-                </h1>
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
-                  class="w-32 self-center justify-center m-10"
-                />
-              </div>
-
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
-                  Logam
-                </h1>
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
-                  class="w-32 self-center justify-center m-10"
-                />
-              </div>
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                <h1 class="p-3 bg-yellow-200 w-1/4 text-center rounded-full m-3">
-                  Logam
-                </h1>
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
-                  class="w-32 self-center justify-center m-10"
-                />
-              </div>
-            </div>
-          </div>
+          
         </div>
 
         <button
