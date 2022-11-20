@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import logo from "../assets/logo.png"
-import "flowbite";
+import 'flowbite';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -17,12 +18,12 @@ const Navbar = () => {
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0   dark:border-gray-700">
-        <li>
+        <Link to="/">
           <a href="#" class="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent   dark:text-white">Home</a>
-        </li>
-        <li>
+        </Link>
+        <Link to="/aboutus">
           <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black  dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
-        </li>
+        </Link>
         <li>
           <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Catalog</a>
         </li>

@@ -5,7 +5,7 @@ import logo2 from "../assets/logo2.png";
 import Gallery from "../component/gallery";
 import Homecatalogcard from "../component/homecatalogcard";
 import Newscard from "../component/newscard";
-
+import 'flowbite';
 function Landingpage() {
   return (
     <>

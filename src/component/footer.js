@@ -1,5 +1,7 @@
-import React from 'react'
-import logo from '../assets/logo.png'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react';
+import logo from '../assets/logo.png';
+import'flowbite';
 function Footer() {
   return (
     

@@ -1,17 +1,44 @@
 
 import './App.css';
-import Navbar from './component/navbar';
+
 import Landingpage from './pages/landingpage';
-import 'flowbite'
+import 'flowbite';
 import 'tw-elements';
-import Footer from './component/footer';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LayoutLanding from './component/LayoutLanding';
+import AboutUs from './pages/AboutUs'
 function App() {
   return (
-  <>
-    <Navbar/>
-    <Landingpage/>
-    <Footer/>
-  </>
+  // <>
+  //   <Navbar/>
+  //   <Landingpage/>
+  //   <Footer/>
+  // </>
+  <BrowserRouter>
+    <Routes>
+      <Route
+            path="/"
+            element={
+              <>
+                <LayoutLanding>
+                <Landingpage/>
+                </LayoutLanding>
+           </>
+            }
+          />
+            <Route
+            path="/aboutus"
+            element={
+              <>
+                <LayoutLanding>
+                <AboutUs/>
+                </LayoutLanding>
+              </>
+            }
+          />
+    </Routes>
+  </BrowserRouter>
   );
 }
 
