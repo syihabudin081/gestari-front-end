@@ -1,4 +1,6 @@
 import React from 'react'
+import Cardcaroussel from '../component/cardcaroussel'
+import Catalogcard from '../component/catalogcard'
 
 function Catalog() {
   return (
@@ -14,6 +16,9 @@ function Catalog() {
     Diversifikasi jenis sampah membantu mengolah sampah sesuai jenisnya
     </h1>
     </div>
+    <Catalogcard/>
+
+
     </div>
   )
 }
