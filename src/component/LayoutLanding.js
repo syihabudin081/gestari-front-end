@@ -1,11 +1,12 @@
 import React from 'react'
 import Footer from './footer'
-import Navbar from './navbar'
+import Navbarcomponent from './navbar'
+
 
 const LayoutLanding = (props) => {
   return (
     <>
-    <Navbar/>
+    <Navbarcomponent/>
     {props.children}
     <Footer/>
     </>

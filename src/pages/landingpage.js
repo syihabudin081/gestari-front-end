@@ -5,22 +5,22 @@ import logo2 from "../assets/logo2.png";
 import Gallery from "../component/gallery";
 import Homecatalogcard from "../component/homecatalogcard";
 import Newscard from "../component/newscard";
-import 'flowbite';
+
 function Landingpage() {
   return (
     <>
-      <div class="w-full h-screen">
+      <div class="w-full h-screen ">
         <div class="w-full h-full flex flex-col-reverse md:flex-row items-center justify-evenly ">
-          <div class="flex flex-col gap-6 ">
-            <h1 class="text-6xl text-left font-bold">
+          <div class="flex flex-col gap-6 md:text-left text-center">
+            <h1 class="text-xl md:text-6xl text-center md:text-left font-bold">
               Bank Sampah <br></br>Gestari
             </h1>
-            <h2 class="text-3xl font-medium">
+            <h2 class="text-lg md:text-3xl  font-medium">
               Sustainable Life, Sustainable<br></br> Environtment
             </h2>
             <button
               type="button"
-              class="text-white bg-yellow-300 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900 w-1/2"
+              class="self-center justify-center md:self-auto md:justify-start text-white bg-yellow-300 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900 w-1/2"
             >
               Selengkapnya
             </button>
@@ -29,7 +29,7 @@ function Landingpage() {
             <img src={logo2} class="w-32 md:w-96" />
           </div>
         </div>
-        <div class="absolute m-auto left-0 right-0 bottom-0 -z-40">
+        <div class="absolute m-auto left-0 right-0 bottom-0  -z-40  ">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#DCF2D4"
