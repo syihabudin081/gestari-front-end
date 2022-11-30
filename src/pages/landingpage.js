@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import logo2 from "../assets/logo2.png";
-import Gallery from "../component/gallery";
+// import Gallery from "../component/gallery";
 import Homecatalogcard from "../component/homecatalogcard";
 import Newscard from "../component/newscard";
 
@@ -42,7 +42,7 @@ function Landingpage() {
 
       <Newscard />
       <Homecatalogcard />
-      <Gallery/>
+      {/* <Gallery/> */}
     </>
   );
 }

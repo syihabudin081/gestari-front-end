@@ -15,7 +15,9 @@ function Homecatalogcard() {
         </div>
         <div>
           <h1 class="p-2  text-yellow-400 font-normal rounded-full">
-            Read More...
+            <a href="/catalog">
+              Read More...
+            </a>
           </h1>
         </div>
       </div>
@@ -74,7 +76,7 @@ function Homecatalogcard() {
           swipeable
         >
           <div class="max-w-sm bg-yellow-100 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col w-[95%] mx-auto">
-            <h1 class="p-3 bg-yellow-300 w-1/4 text-center rounded-full m-3">
+            <h1 class="w-fit p-3 bg-yellow-300 w-1/4 text-center rounded-full m-3">
               Plastik
             </h1>
             <img
@@ -84,7 +86,7 @@ function Homecatalogcard() {
           </div>
 
           <div class="max-w-sm bg-red-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  w-[95%] mx-auto">
-            <h1 class="p-3 bg-red-300 w-1/4 text-center rounded-full m-3">
+            <h1 class="w-fit p-3 bg-red-300 w-1/4 text-center rounded-full m-3">
               Logam
             </h1>
             <img
@@ -93,7 +95,7 @@ function Homecatalogcard() {
             />
           </div>
           <div class="max-w-sm bg-green-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  w-[95%] mx-auto">
-            <h1 class="p-3 bg-green-300 w-1/4 text-center rounded-full m-3">
+            <h1 class="w-fit p-3 bg-green-300 w-1/4 text-center rounded-full m-3">
               Kertas
             </h1>
             <img
@@ -102,7 +104,7 @@ function Homecatalogcard() {
             />
           </div>
           <div class="max-w-sm bg-red-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  w-[95%] mx-auto">
-            <h1 class="p-3 bg-red-300 w-1/4 text-center rounded-full m-3">
+            <h1 class="w-fit p-3 bg-red-300 w-1/4 text-center rounded-full m-3">
               Logam
             </h1>
             <img
@@ -112,7 +114,7 @@ function Homecatalogcard() {
           </div>
 
           <div class="max-w-sm bg-purple-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  w-[95%] mx-auto">
-            <h1 class="p-3 bg-purple-300 w-1/4 text-center rounded-full m-3">
+            <h1 class="w-fit p-3 bg-purple-300 w-1/4 text-center rounded-full m-3">
               Khusus
             </h1>
             <img
