@@ -4,11 +4,10 @@ import logo from '../assets/logo.png';
 
 function Footer() {
   return (
-    
-<footer class="p-4  sm:p-6 bg-black">
+    <footer class="p-4  sm:p-6 bg-black">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
+            <a class="flex items-center">
                 <img src={logo} class="mr-3 h-16" alt="FlowBite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Gestari</span>
             </a>
@@ -18,21 +17,19 @@ function Footer() {
                 <h2 class="mb-6 text-sm font-semibold  uppercase text-white">Resources</h2>
                 <ul class="text-white">
                     <li class="mb-4">
-                        <a href="https://flowbite.com/" class="hover:underline">Gestari</a>
+                        <a  class="hover:underline">Gestari</a>
                     </li>
-                    <li>
-                        <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
-                    </li>
+               
                 </ul>
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Follow us</h2>
                 <ul class="text-white">
                     <li class="mb-4">
-                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                        <a class="hover:underline ">Github</a>
                     </li>
                     <li>
-                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                        <a  class="hover:underline">Discord</a>
                     </li>
                 </ul>
             </div>

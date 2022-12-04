@@ -12,7 +12,7 @@ function Mainnews() {
     <div className="grid lg:grid-cols-1 gap-6 xl:gap-x-12">
       <div className="mb-6 lg:mb-0">
         <div>
-          <div className="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div className="relative overflow-hidden bg-no-repeat bg-cover  ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
             <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg" className="w-full" alt="Louvre" />
             <a href="#!">
               <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}} />
@@ -35,7 +35,7 @@ function Mainnews() {
       </div>
       <div className="mb-6 lg:mb-0">
         <div>
-          <div className="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div className="relative overflow-hidden bg-no-repeat bg-cover  ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
             <img src="https://mdbootstrap.com/img/new/standard/city/032.jpg" className="w-full" alt="Louvre" />
             <a href="#!">
               <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}} />
@@ -58,7 +58,7 @@ function Mainnews() {
       </div>
       <div className="mb-6 lg:mb-0">
         <div>
-          <div className="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
+          <div className="relative overflow-hidden bg-no-repeat bg-cover  ripple shadow-lg rounded-lg mb-6" data-mdb-ripple="true" data-mdb-ripple-color="light">
             <img src="https://mdbootstrap.com/img/new/standard/city/059.jpg" className="w-full" alt="Louvre" />
             <a href="#!">
               <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out" style={{backgroundColor: 'rgba(251, 251, 251, 0.2)'}} />
