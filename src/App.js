@@ -3,7 +3,7 @@ import "./App.css";
 import Landingpage from "./pages/landingpage";
 
 import "tw-elements";
-import { GlobalContext, GlobalProvider } from "./GlobalContext/context";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LayoutLanding from "./component/LayoutLanding";
 import AboutUs from "./pages/AboutUs";
@@ -18,7 +18,7 @@ function App() {
     //   <Footer/>
     // </>
     <BrowserRouter>
-      <GlobalProvider>
+   
         <Routes>
           <Route
             path="/"
@@ -71,7 +71,7 @@ function App() {
             }
           />
         </Routes>
-      </GlobalProvider>
+    
     </BrowserRouter>
   );
 }

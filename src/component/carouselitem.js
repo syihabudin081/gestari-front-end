@@ -3,8 +3,8 @@ import Carousel from "react-multi-carousel";
 export default function CarouselItem({ groupedData, title }) {
   console.log(groupedData);
   return (
-    <div className="flex flex-col justify-center items-center content-center pb-10 gap-5">
-      <h1 class=" px-5 font-semibold text-lg p-2 bg-[#F5F5F5] rounded-full">
+    <div className="flex flex-col justify-center items-center content-center ">
+      <h1 class="  font-bold self-start text-base p-5  ">
         {title}
       </h1>
       <Carousel
@@ -73,13 +73,17 @@ export default function CarouselItem({ groupedData, title }) {
               >
                 <img
                   src={item.image}
-                  class="w-32 self-center justify-center m-10 mb-1 object-contain"
+                  class="w-32 h-32 self-center justify-center m-10 mb-1 object-contain"
                   height="200px"
                   width="100%"
+                  alt="itemimage"
                 />
               </div>
-              <h1 class="p-3  w-1/4 text-center text-xl font-semibold  mx-auto mb-10">
+              <h1 class="px-3  text-center text-lg font-semibold  mx-auto ">
                 {item.name}
+              </h1>
+              <h1 class="px-3  text-center text-base font-normal mx-auto mb-10">
+                Rp{item.price}/{item.satuan}
               </h1>
             </div>
           );

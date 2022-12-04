@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 function Homecatalogcard() {
   return (
     <div className="bg-[#F5F5F5]  h-full flex flex-col justify-center py-10 gap-5  items-center content-center">
-      <div className="flex w-3/4 mx-auto items-center justify-between ">
+      <div className="flex w-11/12 mx-auto items-center justify-between ">
         <div className="flex flex-col gap-3">
-          <h1 class="text-3xl font-semibold">Katalog Sampah</h1>
-          <h2 class="text-lg text-slate-500">
+          <h1 class="md:text-3xl text-lg font-semibold">Katalog Sampah</h1>
+          <h2 class="md:text-lg text-base text-slate-500">
             Lihat Jenis Sampah Yang Kami Terima
           </h2>
         </div>
         <div>
-          <Link to="/catalog" className="p-2  text-yellow-400 font-normal rounded-full">
+          <Link to="/catalog" className="p-2 md:text-sm text-xs  text-yellow-400 font-normal rounded-full">
             Read More...
           </Link>
         </div>
@@ -177,7 +177,7 @@ function Homecatalogcard() {
   slidesToSlide={1}
   swipeable
 >
-  <div class="max-w-sm bg-yellow-100 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col ">
+  <div class="max-w-sm m-4  bg-yellow-100 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col ">
           <h1 class="p-3 bg-yellow-300 w-1/4 text-center rounded-full m-3">
             Plastik
           </h1>
@@ -187,7 +187,7 @@ function Homecatalogcard() {
           />
         </div>
 
-        <div class="max-w-sm bg-red-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  ">
+        <div class="max-w-sm m-4 bg-red-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  ">
           <h1 class="p-3 bg-red-300 w-1/4 text-center rounded-full m-3">
             Logam
           </h1>
@@ -196,7 +196,7 @@ function Homecatalogcard() {
             class="w-32 self-center justify-center m-10"
           />
         </div>
-        <div class="max-w-sm bg-green-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  ">
+        <div class="max-w-sm m-4 bg-green-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  ">
           <h1 class="p-3 bg-green-300 w-1/4 text-center rounded-full m-3">
             Kertas
           </h1>
@@ -205,17 +205,17 @@ function Homecatalogcard() {
             class="w-32 self-center justify-center m-10"
           />
         </div>
-        <div class="max-w-sm bg-red-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  ">
-          <h1 class="p-3 bg-red-300 w-1/4 text-center rounded-full m-3">
-            Logam
+        <div class="max-w-sm m-4 bg-blue-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  ">
+          <h1 class="p-3 bg-blue-300 w-1/4 text-center rounded-full m-3">
+            Kaca
           </h1>
           <img
-            src="https://cdn-icons-png.flaticon.com/512/646/646671.png"
+            src="https://cdn-icons-png.flaticon.com/512/3283/3283610.png"
             class="w-32 self-center justify-center m-10"
           />
         </div>
 
-        <div class="max-w-sm bg-purple-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  ">
+        <div class="max-w-sm m-4 bg-purple-200 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col  ">
           <h1 class="p-3 bg-purple-300 w-1/4 text-center rounded-full m-3">
             Khusus
           </h1>
