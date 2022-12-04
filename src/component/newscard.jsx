@@ -81,7 +81,7 @@ function Newscard() {
           slidesToSlide={1}
           swipeable
         >
-          {data != null &&
+          {data ?
             data.map((res, index) => {
               return (
                 <a href={res.url} target="_blank" rel="noreferrer">
@@ -104,7 +104,14 @@ function Newscard() {
                 </div>
                 </a>
               );
-            })}
+            })
+            :(
+              <>
+                No News
+              </>
+            )
+            
+            }
         </Carousel>
       </div>
     </>
