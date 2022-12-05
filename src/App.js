@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import Catalog from "./pages/Catalog";
 import Journey from "./pages/journey";
 import Contactus from "./pages/contactus";
+import Dashboard from "./pages/dashboard";
 function App() {
   return (
     // <>
@@ -18,60 +19,66 @@ function App() {
     //   <Footer/>
     // </>
     <BrowserRouter>
-   
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <LayoutLanding>
-                  <Landingpage />
-                </LayoutLanding>
-              </>
-            }
-          />
-          <Route
-            path="/aboutus"
-            element={
-              <>
-                <LayoutLanding>
-                  <AboutUs />
-                </LayoutLanding>
-              </>
-            }
-          />
-          <Route
-            path="/catalog"
-            element={
-              <>
-                <LayoutLanding>
-                  <Catalog />
-                </LayoutLanding>
-              </>
-            }
-          />
-          <Route
-            path="/journey"
-            element={
-              <>
-                <LayoutLanding>
-                  <Journey />
-                </LayoutLanding>
-              </>
-            }
-          />
-          <Route
-            path="/contactus"
-            element={
-              <>
-                <LayoutLanding>
-                  <Contactus />
-                </LayoutLanding>
-              </>
-            }
-          />
-        </Routes>
-    
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <LayoutLanding>
+                <Landingpage />
+              </LayoutLanding>
+            </>
+          }
+        />
+        <Route
+          path="/aboutus"
+          element={
+            <>
+              <LayoutLanding>
+                <AboutUs />
+              </LayoutLanding>
+            </>
+          }
+        />
+        <Route
+          path="/catalog"
+          element={
+            <>
+              <LayoutLanding>
+                <Catalog />
+              </LayoutLanding>
+            </>
+          }
+        />
+        <Route
+          path="/journey"
+          element={
+            <>
+              <LayoutLanding>
+                <Journey />
+              </LayoutLanding>
+            </>
+          }
+        />
+        <Route
+          path="/contactus"
+          element={
+            <>
+              <LayoutLanding>
+                <Contactus />
+              </LayoutLanding>
+            </>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <LayoutLanding>
+              <Dashboard />
+            </LayoutLanding>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 }

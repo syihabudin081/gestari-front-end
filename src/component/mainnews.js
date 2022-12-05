@@ -35,7 +35,7 @@ function Mainnews() {
             data.map((res, index) => {
               return (
                 <>
-                  <div className="mb-6 lg:mb-0 shadow p-5 rounded">
+                  <div className="mb-6 lg:mb-0 shadow p-5 rounded" key={res.id}>
                     <div>
                       <div
                         className="relative overflow-hidden bg-no-repeat bg-cover  ripple shadow-lg rounded-lg mb-6"
