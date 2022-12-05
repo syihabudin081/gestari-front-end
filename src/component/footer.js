@@ -6,16 +6,16 @@ function Footer() {
   return (
     
 <footer class="p-4 sm:p-6 bg-stone-900">
-    <div class="pt-8 md:flex md:justify-between gap-3">
-        <div class="text-center basis-1/4 mb-3 md:mb-0 sm:mb-8">
+    <div class="pt-8 md:flex flex-wrap md:justify-between gap-3 md:gap-0">
+        <div class="text-center basis-1/4 md:basis-2/4 lg:basis-1/4 mb-8 md:mb-0 sm:mb-8">
             <a href="/" class="flex flex-col items-center">
-                <img src={logo} class="mr-3 w-36 h-36" alt="FlowBite Logo" />
-                <span class="self-center text-center text-base  whitespace-nowrap text-white">Sustainable Life, Sustainable Environment!</span>
+                <img src={logo} class="w-36 h-36" alt="FlowBite Logo" />
+                <span class="self-center text-center text-base whitespace-pre-wrap text-white">Sustainable Life, Sustainable Environment!</span>
             </a>
         </div>
-        <div class="basis-2/4 grid grid-cols-2 gap-8 sm:gap-6 sm:mb-8">
+        <div class="basis-2/4 md:basis-2/4 grid grid-cols-2 gap-8 sm:gap-6 mb-8">
             <div class="mx-auto">
-                <h2 class="mb-6 text-sm font-semibold  uppercase text-white">About Us</h2>
+                <h2 class="mb-2 sm:mb-6 text-sm font-bold  uppercase text-white">About Us</h2>
                 <ul class="text-white">
                     <li>
                         <a href="https://flowbite.com/" class="hover:underline">Company</a>
@@ -32,7 +32,7 @@ function Footer() {
                 </ul>
             </div>
             <div class="mx-auto">
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Contact Us</h2>
+                <h2 class="mb-2 sm:mb-6 text-sm font-bold text-white uppercase dark:text-white">Contact Us</h2>
                 <ul class="text-white">
                     <li class="mb-4">
                         <p>
@@ -51,7 +51,7 @@ function Footer() {
                 </ul>
             </div>
         </div>
-        <div class="text-center basis-1/4 flex mt-4 space-x-3 sm:justify-center sm:mt-0 items-end">
+        <div class="justify-center text-center flex basis-1/4 md:basis-4/4 lg:basis-1/4 md:mx-auto mt-4 space-x-3 sm:mb-8 items-end">
             <a href="#" class="hover:text-gray-900 dark:hover:text-white">
                 <svg class="text-stone-900 w-8 h-8 bg-white rounded-full p-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                 <span class="sr-only">Facebook page</span>

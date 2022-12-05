@@ -41,13 +41,13 @@ const Navbarcomponent = () => {
     <Navbar
       fluid={true}
       rounded={true}
-      class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-green-400 via-green-300 to-yellow-300 border-gray-200 px-2 sm:px-10 py-6 dark:bg-gray-900 z-20 top-0"
+      class="sticky top-0 left-0 right-0 z-1001 bg-gradient-to-r from-green-400 via-green-300 to-yellow-300 border-gray-200 px-2 sm:px-10 py-3 dark:bg-gray-900 z-20 top-0"
     >
       <Navbar.Brand>
-        <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-        <span class="self-center text-xl font-semibold whitespace-nowrap text-white">
+        <img src={logo} className="ml-2 h-10 md:h-9" alt="Flowbite Logo" />
+        {/* <span class="self-center text-xl font-semibold whitespace-nowrap text-white">
           Gestari
-        </span>
+        </span> */}
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>

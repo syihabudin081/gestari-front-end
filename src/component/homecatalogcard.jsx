@@ -6,7 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 function Homecatalogcard() {
   return (
     <div class="bg-[#F5F5F5] h-full flex flex-col justify-center py-10 gap-5">
-      <div class="flex w-3/4 mx-auto items-center justify-between ">
+      <div class="flex flex-col sm:flex-row text-center sm:text-left container sm:w-10/12 mx-auto items-center justify-between ">
         <div class="flex flex-col gap-3">
           <h1 class="text-3xl font-semibold">Katalog Sampah</h1>
           <h2 class="text-lg text-slate-500">
@@ -28,7 +28,7 @@ function Homecatalogcard() {
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
-          containerClass="container"
+          containerClass="container md:mx-auto"
           dotListClass=""
           draggable
           focusOnSelect={false}

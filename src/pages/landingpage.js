@@ -10,23 +10,23 @@ function Landingpage() {
   return (
     <>
       <div class="w-full h-screen ">
-        <div class="w-full h-full flex flex-col-reverse md:flex-row items-center justify-evenly ">
-          <div class="flex flex-col gap-6 md:text-left text-center">
-            <h1 class="text-xl md:text-6xl text-center md:text-left font-bold">
-              Bank Sampah <br></br>Gestari
+        <div class="w-full h-full flex flex-col-reverse md:flex-row items-center justify-center">
+          <div class="flex flex-col gap-3 md:text-left text-center">
+            <h1 class="max-w-lg text-xl md:text-6xl text-center md:text-left font-bold">
+              Bank Sampah Gestari
             </h1>
-            <h2 class="text-lg md:text-3xl  font-medium">
-              Sustainable Life, Sustainable<br></br> Environtment
+            <h2 class="max-w-lg text-lg md:text-3xl font-medium">
+              Sustainable Life, Sustainable Environtment
             </h2>
-            <button
-              type="button"
+            <a 
+              href="/aboutus"
               class="self-center justify-center md:self-auto md:justify-start text-white bg-yellow-300 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900 w-1/2"
             >
               Selengkapnya
-            </button>
+            </a>
           </div>
           <div>
-            <img src={logo2} class="w-32 md:w-96" />
+            <img src={logo2} class="w-[12rem] sm:w-[15rem] md:w-96" />
           </div>
         </div>
         <div class="absolute m-auto left-0 right-0 bottom-0  -z-40  ">

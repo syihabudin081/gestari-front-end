@@ -21,7 +21,7 @@ function Newscard() {
             draggable
             focusOnSelect={false}
             infinite={false}
-            itemClass="p-5"
+            itemClass="p-3 md:p-5"
             keyBoardControl
             minimumTouchDrag={80}
             pauseOnHover
@@ -71,9 +71,9 @@ function Newscard() {
                   alt=""
                 />
               </a>
-              <div class="p-5">
+              <div class="p-2 sm:p-3 md:p-5">
                 <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Noteworthy technology acquisitions 2021
                   </h5>
                 </a>
