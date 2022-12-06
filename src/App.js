@@ -4,6 +4,8 @@ import Landingpage from "./pages/landingpage";
 
 import "tw-elements";
 
+import { Sample as UseEffectHooksSample } from "./UseEffectHooks";
+import { Sample as DidMountSample } from "./DidMount";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LayoutLanding from "./component/LayoutLanding";
 import AboutUs from "./pages/AboutUs";
@@ -26,6 +28,18 @@ function App() {
               <LayoutLanding>
                 <Landingpage />
               </LayoutLanding>
+            </>
+          }
+        />
+        <Route
+          path="/coba"
+          element={
+            <>
+              <div className="App">
+                <UseEffectHooksSample />
+                <hr />
+                <DidMountSample />
+              </div>
             </>
           }
         />

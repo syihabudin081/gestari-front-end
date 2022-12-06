@@ -13,5 +13,10 @@ module.exports = {
       }
     },
   },
-  plugins: [require("flowbite/plugin"), require("tw-elements/dist/plugin")],
+  variants: {
+    extend: {
+      lineClamp: ["hover"],
+    },
+  },
+  plugins: [require("flowbite/plugin"), require("tw-elements/dist/plugin"), require("@tailwindcss/line-clamp")],
 };
