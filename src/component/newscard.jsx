@@ -11,7 +11,7 @@ function Newscard() {
 
   const getNews = async () => {
     const news = await fetch(
-      `https://berita-indo-api.vercel.app/v1/cnn-news/gaya-hidup`
+      `https://berita-indo-api.vercel.app/v1/cnn-news?title=sampah+plastik`
     ).then((response) => response.json());
     // console.log(users.data);
     setNews( news?.data );
