@@ -1,12 +1,17 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo2 from "../assets/logo2.png";
 import Gallery from "../component/gallery";
 import Homecatalogcard from "../component/homecatalogcard";
 import Newscard from "../component/newscard";
 
 function Landingpage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <div className="scroll-smooth">
       <div class="w-full h-screen bg-[#DCF2D4]">
@@ -18,12 +23,14 @@ function Landingpage() {
             <h2 class="text-lg md:text-3xl  font-medium">
               Sustainable Life, Sustainable<br></br> Environtment
             </h2>
+            <Link to="/aboutus">
             <button
               type="button"
               class="self-center justify-center md:self-auto md:justify-start text-white bg-yellow-300 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900 w-1/2"
             >
               Selengkapnya
             </button>
+            </Link>
           </div>
           <div>
             <img src={logo2} class="w-32 md:w-96" />

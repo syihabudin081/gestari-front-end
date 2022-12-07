@@ -7,9 +7,10 @@ function Newscard() {
 
   let fetchdata = async () => {
     let res = await axios.get(
-      "https://newsapi.org/v2/everything?q=trash&apiKey=a98081a9fc2b45a18f5fa09d52e1d321&pageSize=7"
+      "https://berita-indo-api.vercel.app/v1/antara-news/warta-bumi"
     );
-    setData(res.data.articles);
+
+    setData(res.data.data);
   };
 
   useEffect(() => {
@@ -81,37 +82,33 @@ function Newscard() {
           slidesToSlide={1}
           swipeable
         >
-          {data ?
+          {data ? (
             data.map((res, index) => {
               return (
-                <a href={res.url} target="_blank" rel="noreferrer">
-                <div className="max-w-sm bg-white border border-gray-200 rounded-lg m-4 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                  <img
-                    className="rounded-t-lg w-full h-52 object-cover"
-                    src={res.urlToImage}
-                    alt=""
-                  />
+                <a href={res.link} target="_blank" rel="noreferrer">
+                  <div className="max-w-sm bg-white border border-gray-200 rounded-lg m-4 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <img
+                      className="rounded-t-lg w-full h-52 object-cover"
+                      src={res.image}
+                      alt=""
+                    />
 
-                  <div className="p-5 w-full h-48">
-                    <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 dark:text-white">
-                      {res.source.name}
-                    </h5>
+                    <div className="p-5 w-full h-48">
+                      <h5 className="mb-2 text-sm font-bold tracking-tight text-gray-900 dark:text-white">
+                        Antara News
+                      </h5>
 
-                    <h5 className="mb-2 text-sm md:text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      {res.title}
-                    </h5>
+                      <h5 className="mb-2 text-sm md:text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        {res.title}
+                      </h5>
+                    </div>
                   </div>
-                </div>
                 </a>
               );
             })
-            :(
-              <>
-                No News
-              </>
-            )
-            
-            }
+          ) : (
+            <></>
+          )}
         </Carousel>
       </div>
     </>

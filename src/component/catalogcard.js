@@ -52,7 +52,7 @@ function Catalogcard() {
             />
           ))
         ) : (
-          <div class="text-center">
+          <div class="text-center h-screen">
             <div role="status">
               <svg
                 class="inline mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"

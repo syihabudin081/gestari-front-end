@@ -3,6 +3,11 @@ import Mainnews from "../component/mainnews";
 import Sidebarnews from "../component/sidebarnews";
 
 function Journey() {
+
+  
+
+
+
   return (
     <>
       <div class="flex flex-col items-center text-center gap-5 my-5">

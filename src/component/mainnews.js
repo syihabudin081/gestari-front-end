@@ -51,7 +51,7 @@ function Mainnews() {
                           <div
                             className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
                             style={{
-                              backgroundColor: "rgba(251, 251, 251, 0.2)",
+                              backgroundColor: "rgba(251, 251, 251, 0.2)"
                             }}
                           />
                         </a>
@@ -71,9 +71,9 @@ function Mainnews() {
                       </p>
                     </div>
                   </div>
-                  ;
+                  
                 </>
-              );
+              )
             })}
 
           {/* <div className="mb-6 lg:mb-0">
