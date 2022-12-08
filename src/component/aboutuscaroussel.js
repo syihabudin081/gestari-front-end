@@ -48,7 +48,7 @@ function Aboutuscaroussel() {
             <div class="w-full h-screen bg-[#DCF2D4]">
               <div class="w-full h-full flex flex-col-reverse md:flex-row items-center justify-evenly ">
                 <div class="flex flex-col gap-6 md:w-1/4">
-                  <p class="md:text-2xl text-sm md:text-left text-center font-normal">
+                  <p class="md:text-xl lg:text-2xl text-sm md:text-left text-center font-normal ">
                     Gestari merupakan salah satu komunitas pengelola sampah di
                     Dusun Gesikan, Sewon, Bantul yang komunitas pengelolaan
                     sampah terpadu, reduse, reuse, recycle, memanfaatkan sampah,

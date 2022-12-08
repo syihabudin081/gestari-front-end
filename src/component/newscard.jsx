@@ -11,24 +11,23 @@ function Newscard() {
 
   const getNews = async () => {
     const news = await fetch(
-      `https://berita-indo-api.vercel.app/v1/cnn-news?title=sampah+plastik`
+      `https://berita-indo-api.vercel.app/v1/antara-news/warta-bumi`
     ).then((response) => response.json());
-    // console.log(users.data);
     setNews( news?.data );
   }
 
-
   return (
     <>
-      <div class="w-11/12 mx-auto flex flex-col items-center justify-center my-16 ">
-        <h1 class="text-center text-2xl font-semibold">
+      <div class="  h-full flex flex-col justify-center items-center content-center py-10 gap-5   ">
+        <h1 class="text-center text-2xl font-bold">
           Berita Lingkungan Hari Ini
         </h1>
-   
+        
         <div class="w-11/12  mx-auto ">
           <Carousel
             additionalTransfrom={0}
             arrows
+            autoplay
             autoPlaySpeed={3000}
             centerMode={false}
             className=""
@@ -40,6 +39,7 @@ function Newscard() {
             itemClass="p-3 md:p-5"
             keyBoardControl
             minimumTouchDrag={80}
+            partialVisible
             pauseOnHover
             renderArrowsWhenDisabled={false}
             renderButtonGroupOutside={false}
@@ -53,20 +53,21 @@ function Newscard() {
                 items: 3,
                 partialVisibilityGutter: 40,
               },
-              mobile: {
-                breakpoint: {
-                  max: 464,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 30,
+            },
+            mobile: {
+              breakpoint: {
+                max: 464,
+                min: 0,
               },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464,
-                },
-                items: 2,
+              items: 1,
+              partialVisibilityGutter: 30,
+            },
+            tablet: {
+              breakpoint: {
+                max: 1024,
+                min: 464,
+              },
+              items: 2,
                 partialVisibilityGutter: 30,
               },
             }}

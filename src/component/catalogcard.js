@@ -1,395 +1,78 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, {  useEffect, useState } from "react";
 
-import Carousel from "react-multi-carousel";
+
 import "react-multi-carousel/lib/styles.css";
-import datakertas from "../data/datakertas.json";
-import dataplastik from "../data/dataplastik.json";
-import datalogam from "../data/datalogam.json";
-import datakaca from "../data/datakaca.json";
-import datakhusus from "../data/datakhusus.json"
+import axios from "axios";
+import CarouselItem from "./carouselitem";
+
 function Catalogcard() {
+  const [data, setData] = useState();
+  const [groupedData, setGroupedData] = useState(null);
+
+  let fetchdata = async () => {
+    console.log("halo");
+    try {
+      let res = await axios.get(
+        "https://hammerhead-app-zfi4g.ondigitalocean.app/katalog"
+      );
+
+      setData(res.data.data);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchdata();
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      const newData = data.reduce((group, product) => {
+        const { type } = product;
+        group[type] = group[type] ?? [];
+        group[type].push(product);
+        return group;
+      }, {});
+      setGroupedData(newData);
+      console.log(newData);
+    }
+  }, [data]);
+
   return (
     <>
       <div>
-        <h1 class="w-11/12 mx-auto text-left px-5 font-semibold text-lg">
-          Kertas
-        </h1>
-        <div class="w-11/12  mx-auto ">
-          <Carousel
-            additionalTransfrom={0}
-            arrows
-            autoPlaySpeed={3000}
-            centerMode={false}
-            className=""
-            containerClass="container"
-            dotListClass=""
-            draggable
-            focusOnSelect={false}
-            infinite={false}
-            itemClass="p-5"
-            keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
-            renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 3000,
-                  min: 1024,
-                },
-                items: 3,
-                partialVisibilityGutter: 40,
-              },
-              mobile: {
-                breakpoint: {
-                  max: 464,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 30,
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464,
-                },
-                items: 2,
-                partialVisibilityGutter: 30,
-              },
-            }}
-            rewind={false}
-            rewindWithAnimation={false}
-            rtl={false}
-            shouldResetAutoplay
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={1}
-            swipeable
-          >
-            {datakertas.map((data, index) => {
-              return (
-                <>
-                  <div class="max-w-sm bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                    <img
-                      src={data.url}
-                      class="w-32 self-center justify-center m-10 mb-1"
-                    />
-                    <h1 class="p-3  w-1/4 text-center text-xl font-semibold  mx-auto mb-10">
-                      {data.name}
-                    </h1>
-                  </div>
-                </>
-              );
-            })}
-          </Carousel>
-        </div>
-      </div>{" "}
-      <div>
-        <h1 class="w-11/12 mx-auto text-left px-5 font-semibold text-lg">
-          Plastik
-        </h1>
-        <div class="w-11/12  mx-auto ">
-          <Carousel
-            additionalTransfrom={0}
-            arrows
-            autoPlaySpeed={3000}
-            centerMode={false}
-            className=""
-            containerClass="container"
-            dotListClass=""
-            draggable
-            focusOnSelect={false}
-            infinite={false}
-            itemClass="p-5"
-            keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
-            renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 3000,
-                  min: 1024,
-                },
-                items: 3,
-                partialVisibilityGutter: 40,
-              },
-              mobile: {
-                breakpoint: {
-                  max: 464,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 30,
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464,
-                },
-                items: 2,
-                partialVisibilityGutter: 30,
-              },
-            }}
-            rewind={false}
-            rewindWithAnimation={false}
-            rtl={false}
-            shouldResetAutoplay
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={1}
-            swipeable
-          >
-            {dataplastik.map((data, index) => {
-              return (
-                <>
-                  <div class="max-w-sm bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                    <img
-                      src={data.url}
-                      class="w-32 self-center justify-center m-10 mb-1"
-                    />
-                    <h1 class="p-3  text-center text-xl font-semibold  mx-auto mb-10">
-                      {data.name}
-                    </h1>
-                  </div>
-                </>
-              );
-            })}
-          </Carousel>
-        </div>
-      </div>
-      <div>
-        <h1 class="w-11/12 mx-auto text-left px-5 font-semibold text-lg">
-          Logam
-        </h1>
-        <div class="w-11/12  mx-auto ">
-          <Carousel
-            additionalTransfrom={0}
-            arrows
-            autoPlaySpeed={3000}
-            centerMode={false}
-            className=""
-            containerClass="container"
-            dotListClass=""
-            draggable
-            focusOnSelect={false}
-            infinite={false}
-            itemClass="p-5"
-            keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
-            renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 3000,
-                  min: 1024,
-                },
-                items: 3,
-                partialVisibilityGutter: 40,
-              },
-              mobile: {
-                breakpoint: {
-                  max: 464,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 30,
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464,
-                },
-                items: 2,
-                partialVisibilityGutter: 30,
-              },
-            }}
-            rewind={false}
-            rewindWithAnimation={false}
-            rtl={false}
-            shouldResetAutoplay
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={1}
-            swipeable
-          >
-            {datalogam.map((data, index) => {
-              return (
-                <>
-                  <div class="max-w-sm bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                    <img
-                      src={data.url}
-                      class="w-32 self-center justify-center m-10 mb-1"
-                    />
-                    <h1 class="p-3  text-center text-xl font-semibold  mx-auto mb-10">
-                      {data.name}
-                    </h1>
-                  </div>
-                </>
-              );
-            })}
-          </Carousel>
-        </div>
-      </div>
-      <div>
-        <h1 class="w-11/12 mx-auto text-left px-5 font-semibold text-lg">
-          Kaca
-        </h1>
-        <div class="w-11/12  mx-auto ">
-          <Carousel
-            additionalTransfrom={0}
-            arrows
-            autoPlaySpeed={3000}
-            centerMode={false}
-            className=""
-            containerClass="container"
-            dotListClass=""
-            draggable
-            focusOnSelect={false}
-            infinite={false}
-            itemClass="p-5"
-            keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
-            renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 3000,
-                  min: 1024,
-                },
-                items: 3,
-                partialVisibilityGutter: 40,
-              },
-              mobile: {
-                breakpoint: {
-                  max: 464,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 30,
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464,
-                },
-                items: 2,
-                partialVisibilityGutter: 30,
-              },
-            }}
-            rewind={false}
-            rewindWithAnimation={false}
-            rtl={false}
-            shouldResetAutoplay
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={1}
-            swipeable
-          >
-            {datakaca.map((data, index) => {
-              return (
-                <>
-                  <div class="max-w-sm bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                    <img
-                      src={data.url}
-                      class="w-32 self-center justify-center m-10 mb-1"
-                    />
-                    <h1 class="p-3  text-center text-xl font-semibold  mx-auto mb-10">
-                      {data.name}
-                    </h1>
-                  </div>
-                </>
-              );
-            })}
-          </Carousel>
-        </div>
-      </div>
-      <div>
-        <h1 class="w-11/12 mx-auto text-left px-5 font-semibold text-lg">
-          Logam
-        </h1>
-        <div class="w-11/12  mx-auto ">
-          <Carousel
-            additionalTransfrom={0}
-            arrows
-            autoPlaySpeed={3000}
-            centerMode={false}
-            className=""
-            containerClass="container"
-            dotListClass=""
-            draggable
-            focusOnSelect={false}
-            infinite={false}
-            itemClass="p-5"
-            keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
-            renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 3000,
-                  min: 1024,
-                },
-                items: 3,
-                partialVisibilityGutter: 40,
-              },
-              mobile: {
-                breakpoint: {
-                  max: 464,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 30,
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464,
-                },
-                items: 2,
-                partialVisibilityGutter: 30,
-              },
-            }}
-            rewind={false}
-            rewindWithAnimation={false}
-            rtl={false}
-            shouldResetAutoplay
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={1}
-            swipeable
-          >
-            {datakhusus.map((data, index) => {
-              return (
-                <>
-                  <div class="max-w-sm bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-                    <img
-                      src={data.url}
-                      class="w-32 self-center justify-center m-10 mb-1"
-                    />
-                    <h1 class="p-3  text-center text-xl font-semibold  mx-auto mb-10">
-                      {data.name}
-                    </h1>
-                  </div>
-                </>
-              );
-            })}
-          </Carousel>
-        </div>
+        {groupedData ? (
+          Object.keys(groupedData)?.map((key) => (
+            <CarouselItem
+              key={key}
+              groupedData={groupedData[key]}
+              title={key}
+            />
+          ))
+        ) : (
+          <div class="text-center h-screen">
+            <div role="status">
+              <svg
+                class="inline mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                viewBox="0 0 100 101"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                  fill="currentFill"
+                />
+              </svg>
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

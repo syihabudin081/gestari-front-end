@@ -4,7 +4,7 @@ import logo from '../assets/logo.png';
 
 function Footer() {
   return (
-    
+  
 <footer class="p-4 sm:p-6 bg-stone-900">
     <div class="pt-8 md:flex flex-wrap md:justify-between gap-3 md:gap-0">
         <div class="text-center basis-1/4 md:basis-2/4 lg:basis-1/4 mb-8 md:mb-0 sm:mb-8">

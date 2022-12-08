@@ -12,6 +12,7 @@ import AboutUs from "./pages/AboutUs";
 import Catalog from "./pages/Catalog";
 import Journey from "./pages/journey";
 import Contactus from "./pages/contactus";
+import Dashboard from "./pages/dashboard";
 function App() {
   return (
     // <>
@@ -73,7 +74,7 @@ function App() {
             </>
           }
         />
-          <Route
+        <Route
           path="/contactus"
           element={
             <>
@@ -81,6 +82,14 @@ function App() {
                 <Contactus />
               </LayoutLanding>
             </>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <LayoutLanding>
+              <Dashboard />
+            </LayoutLanding>
           }
         />
       </Routes>
