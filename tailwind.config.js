@@ -7,7 +7,16 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      zIndex: {
+        '1001': 1001,
+      }
+    },
   },
-  plugins: [require("flowbite/plugin"), require("tw-elements/dist/plugin")],
+  variants: {
+    extend: {
+      lineClamp: ["hover"],
+    },
+  },
+  plugins: [require("flowbite/plugin"), require("tw-elements/dist/plugin"), require("@tailwindcss/line-clamp")],
 };

@@ -69,6 +69,11 @@ function Statistics() {
         </p>
         <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">35</p>
       </div>
+      <div class="w-full text-center">
+        <a href="/dashboard" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-400 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900 w-1/2">
+          Discover more
+        </a>
+      </div>
     </div>
   </div>
 </div>
