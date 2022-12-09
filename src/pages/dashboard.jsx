@@ -4,16 +4,8 @@ import { Link } from "react-router-dom";
 function Dashboard() {
   const series = [
     {
-      name: "series-1",
-      data: [30, 40, 45, 50, 49, 60, 70, 91],
-    },
-    {
-      name: "series-2",
-      data: [0, 45, 50, 49, 60, 70, 91, 4],
-    },
-    {
-      name: "series-3",
-      data: [40, 45, 50, 49, 60, 70, 30, 91],
+      name: "Plastik",
+      data: [376, 924, 376, 200, 200],
     },
   ];
   const options = {
@@ -24,11 +16,25 @@ function Dashboard() {
       text: "GRAFIK SAMPAH",
     },
     xaxis: {
-      categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+      categories: ["Plastik", "Kertas", "Kaca", "Logam", "Khusus"],
+    },
+  };
+  const lineoptions = {
+    chart: {
+      id: "line",
+    },
+    title: {
+      text: "GRAFIK OMSET BANK SAMPAH",
+    },
+    xaxis: {
+      categories:  ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
     },
   };
 
   const optionDonut = {
+    title: {
+      text: "Kategori Sampah",
+    },
     width: "600px",
   };
 
@@ -138,7 +144,20 @@ function Dashboard() {
             <div className="flex items-center justify-center">
               <div className="h-full py-8 px-6 space-y-6 rounded-xl border border-gray-200 bg-white w-3/4 md:w-full">
                 <div>
-                  <Chart options={options} series={series} type="line" />
+                  <Chart
+                    options={lineoptions}
+                    series={[
+                      {
+                        name: "",
+                        data: [28000, 29000, 33000, 36000, 32000, 32000, 33000],
+                      },
+                      {
+                        name: "",
+                        data: [12000, 11000, 14000, 18000, 17000, 13000, 13000],
+                      },
+                    ]}
+                    type="line"
+                  />
                 </div>
               </div>
             </div>
@@ -148,7 +167,8 @@ function Dashboard() {
                   <Chart
                     options={optionDonut}
                     series={[44, 55, 41, 17, 15]}
-                    label={["A", "B", "C", "D", "E"]}
+                    label={["Plastik", "Kertas", "Kaca", "Logam", "Khusus"]}
+                    
                     type="donut"
                   />
                 </div>
