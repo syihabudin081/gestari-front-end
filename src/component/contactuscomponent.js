@@ -85,6 +85,7 @@ function Contactuscomponent() {
           <img
             src="https://cdn-icons-png.flaticon.com/512/126/126509.png"
             class="w-7 h-7"
+            alt="icon"
           />
           <h1>08982132139321</h1>
         </div>
@@ -92,6 +93,7 @@ function Contactuscomponent() {
           <img
             src="https://cdn-icons-png.flaticon.com/512/447/447031.png"
             class="w-7 h-7"
+            alt="icon"
           />
           <h1>Gesikan Rt 4 Jaranan, Panggungharjo, Sewon, Bantul</h1>
         </div>

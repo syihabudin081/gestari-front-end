@@ -34,7 +34,7 @@ function Gallery() {
                     <div className="w-full p-1 md:p-2" key={res.id}>
                       <img
                         alt="gallery"
-                        className="block object-cover object-center w-[446px] h-[310px] rounded-lg"
+                        className="block object-cover object-center w-[446px] h-[310px] rounded-lg hover:scale-110"
                         src={res.image}
                       />
                     </div>

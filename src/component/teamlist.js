@@ -10,10 +10,10 @@ function Teamlist() {
             Our team
           </h2>
         </div>
-        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
+              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover hover:scale-110"
               src="https://hammerhead-app-zfi4g.ondigitalocean.app/images/Hammam.jpg"
               alt="Bonnie Avatar"
             />
@@ -24,7 +24,7 @@ function Teamlist() {
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover object-right-top"
+              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover object-right-top hover:scale-110"
               src="https://hammerhead-app-zfi4g.ondigitalocean.app/images/Agil.jpg"
               alt="Helene Avatar"
             />
@@ -35,7 +35,7 @@ function Teamlist() {
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover "
+              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover hover:scale-110 "
               src="https://hammerhead-app-zfi4g.ondigitalocean.app/images/Syifa.jpg"
               alt="Helene Avatar"
             />
@@ -46,7 +46,7 @@ function Teamlist() {
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover "
+              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover hover:scale-110"
               src="https://hammerhead-app-zfi4g.ondigitalocean.app/images/Indra.png"
               alt="Helene Avatar"
             />
@@ -57,7 +57,7 @@ function Teamlist() {
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
             <img
-              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover "
+              class="mx-auto mb-4 w-36 h-36 rounded-full object-cover hover:scale-110 "
               src="https://hammerhead-app-zfi4g.ondigitalocean.app/images/Tika.jpg"
               alt="Helene Avatar"
             />

@@ -28,15 +28,12 @@ function Dashboard() {
     },
   };
 
-
-
-
   const optionDonut = {
     width: "600px",
   };
 
   return (
-    <div>
+    <div className="">
       {/* component */}
       <div className="flex flex-col items-center text-center gap-5 my-5">
         <span>
@@ -155,7 +152,7 @@ function Dashboard() {
             <div className="flex items-center justify-center">
               <div className="h-full py-8 px-6 space-y-6 rounded-xl border border-gray-200 bg-white w-3/4 md:w-full">
                 <div>
-                  <Chart options={options} series={series} type="line"  />
+                  <Chart options={options} series={series} type="line" />
                 </div>
               </div>
             </div>
@@ -167,7 +164,6 @@ function Dashboard() {
                     series={[44, 55, 41, 17, 15]}
                     label={["A", "B", "C", "D", "E"]}
                     type="donut"
-                    
                   />
                 </div>
               </div>

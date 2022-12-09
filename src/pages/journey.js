@@ -90,7 +90,7 @@ function Journey() {
       </div>
 
       {searchStatus ? (
-        <div className="container my-24 px-6 mx-auto">
+        <div className="container my-24 px-6 mx-auto h-screen">
           <section className="mb-32 text-gray-800 text-center">
             <h2 className="text-3xl font-bold mb-12 text-center">Result</h2>
             <div className="grid lg:grid-cols-2 gap-6 xl:gap-x-12">

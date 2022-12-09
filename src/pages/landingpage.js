@@ -13,7 +13,7 @@ function Landingpage() {
   }, [])
   
   return (
-    <div className="scroll-smooth">
+    <div className="">
       <div class="w-full h-screen bg-[#DCF2D4]">
         <div class="w-full h-full flex flex-col-reverse md:flex-row items-center justify-evenly ">
           <div class="flex flex-col gap-6 md:text-left text-center">
@@ -26,7 +26,7 @@ function Landingpage() {
             <Link to="/aboutus">
             <button
               type="button"
-              class="self-center justify-center md:self-auto md:justify-start text-white bg-yellow-300 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900 w-1/2"
+              class="hover:scale-110 self-center justify-center md:self-auto md:justify-start text-white bg-yellow-300 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900 w-1/2"
             >
               Selengkapnya
             </button>

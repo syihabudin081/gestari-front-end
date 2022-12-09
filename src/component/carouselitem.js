@@ -4,7 +4,7 @@ export default function CarouselItem({ groupedData, title }) {
   console.log(groupedData);
   return (
     <div className="flex flex-col justify-center items-center content-center ">
-      <h1 class="  font-bold self-start text-base p-5  ">
+      <h1 class="  font-bold text-base p-5 self-start min-[1700px]:self-center  ">
         {title}
       </h1>
       <Carousel
@@ -18,8 +18,9 @@ export default function CarouselItem({ groupedData, title }) {
         draggable
         focusOnSelect={false}
         infinite
-        itemClass=""
+        itemClass="pr-5 py-5"
         keyBoardControl
+       
         minimumTouchDrag={80}
         partialVisible
         pauseOnHover
@@ -27,9 +28,17 @@ export default function CarouselItem({ groupedData, title }) {
         renderButtonGroupOutside={false}
         renderDotsOutside={false}
         responsive={{
+          superDesktop: {
+            breakpoint: {
+              max: 4000,
+              min: 1700,
+            },
+            items: 4,
+            partialVisibilityGutter: 0,
+          },
           desktop: {
             breakpoint: {
-              max: 3000,
+              max: 1700,
               min: 1024,
             },
             items: 3,
@@ -41,7 +50,7 @@ export default function CarouselItem({ groupedData, title }) {
               min: 0,
             },
             items: 1,
-            partialVisibilityGutter: 30,
+            partialVisibilityGutter: 0,
           },
           tablet: {
             breakpoint: {
@@ -49,7 +58,7 @@ export default function CarouselItem({ groupedData, title }) {
               min: 464,
             },
             items: 2,
-            partialVisibilityGutter: 30,
+            partialVisibilityGutter: 0,
           },
         }}
         rewind={false}
@@ -65,7 +74,8 @@ export default function CarouselItem({ groupedData, title }) {
           return (
             <div
               key={item.id}
-              class="max-w-sm bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col"
+              class="hover:scale-110 max-w-sm bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col"
+            
             >
               <div
                 class="flex flex-col justify-center items-center content-center"

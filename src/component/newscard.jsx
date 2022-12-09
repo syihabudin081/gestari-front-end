@@ -39,7 +39,7 @@ function Newscard() {
           draggable
           focusOnSelect={false}
           infinite
-          itemClass=""
+          itemClass="pr-5 py-5 "
           keyBoardControl
           minimumTouchDrag={80}
           partialVisible
@@ -48,9 +48,17 @@ function Newscard() {
           renderButtonGroupOutside={false}
           renderDotsOutside={false}
           responsive={{
+            superdesktop: {
+              breakpoint: {
+                max: 4000,
+                min: 2000,
+              },
+              items: 4,
+              partialVisibilityGutter: 0,
+            },
             desktop: {
               breakpoint: {
-                max: 3000,
+                max: 2000,
                 min: 1024,
               },
               items: 3,
@@ -86,7 +94,7 @@ function Newscard() {
             data.map((res, index) => {
               return (
                 <a href={res.link} target="_blank" rel="noreferrer">
-                  <div className="max-w-sm bg-white border border-gray-200 rounded-lg m-4 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                  <div className="hover:scale-110 max-w-sm bg-white border border-gray-200 rounded-lg m-4 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <img
                       className="rounded-t-lg w-full h-52 object-cover"
                       src={res.image}
