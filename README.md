@@ -1,5 +1,9 @@
+
+
+
 Link  : https://gestari-front-end.vercel.app/
 
+I developed a website for Gestari waste bank using React and Tailwind, featuring a range of functionalities including a news section, gallery, information about the company's activities, a smart dashboard, a catalog of products and services, and a map showing the location of the company. This project required me to utilize my skills in front-end web development and design to create a user-friendly and informative website for Gestari
 
 # Getting Started with Create React App
 
